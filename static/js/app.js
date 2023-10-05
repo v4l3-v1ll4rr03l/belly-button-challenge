@@ -23,7 +23,19 @@ function buildChart(curr_id){
             orientation: "h"
           };
           
-        Plotly.newPlot("plot", [trace1]);
+        Plotly.newPlot("bar", [trace1]);
+
+        let trace2 = {
+            x: temp_y,
+            y: temp_x,
+            mode: "markers",
+            marker: {
+                color: temp_y,
+                size: temp_x
+            }
+          };
+
+        Plotly.newPlot('bubble', [trace2]);
     });
 }
 
