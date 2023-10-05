@@ -33,17 +33,4 @@ d3.json(url).then(function(data) {
       
     Plotly.newPlot("plot", [trace1]);
 });
-
-// let trace1 = {
-//     x: otu_amounts,
-//     y: otu_labels,
-//     text: otu_labels,
-//     type: "bar",
-//     orientation: "h"
-//   };
-  
-//   let data = [trace1];
-  
-//   // Render the plot to the div tag with id "plot"
-//   Plotly.newPlot("plot", data);
-  
+console.log(curr_metadata);
